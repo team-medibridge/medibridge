@@ -1,0 +1,22 @@
+{% extends "user_layout.html" %}
+{% load static  %}
+{% block content %}
+
+<section class="book" id="book">
+    <div class="heading">Book<span> now</span></div>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/book-img.svg.jpeg' %} " alt="">
+        </div>
+        <form action="">
+            <h3>Book Appointment</h3>
+            <input type="text" placeholder="Name" class="box">
+            <input type="number" placeholder="number" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="date" class="box">
+            <input type="submit" value="Book now" class="btn">
+        </form>
+    </div>
+</section>
+
+{% endblock content %}
